@@ -38,6 +38,12 @@ mongoose.connection.once('open', () => {
     console.log('connected to database');
 });
 
+app.get("/", (req, res) => {
+    res
+        .set("Content-Security-Policy", "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'")
+        .send("<html><head></head><body></body></html>");
+})
+
 app.use(express.static(path.join(__dirname, 'build')));
 
 app.get('/*', (req, res) => {
