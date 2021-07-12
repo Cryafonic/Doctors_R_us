@@ -1,4 +1,5 @@
 const express = require('express');
+var path = require('path');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -20,7 +21,7 @@ app.use('/api', authRoute)
 app.use('/api', appointmentRoute)
 
 // conect to the database
-mongoose.connect(process.env.URI,{
+mongoose.connect('mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -38,7 +39,6 @@ mongoose.connection.once('open', () => {
 });
 
 app.use(express.static(path.join(__dirname, 'build')));
-
 
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
