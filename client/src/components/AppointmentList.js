@@ -133,7 +133,7 @@ export default function AppointmentList() {
   } else if (user.role === "admin") {
     return (
       <div>
-        <h3 className='text-center ' style={{margin: '1%'}}>Appointments</h3>
+        <h3 className='text-center marginAllaround' >Appointments</h3>
         <Button className="top-button " onClick={handleRole}>Create Doctor</Button>
         <Table striped bordered hover size="sm">
           <thead className="thead-light">
@@ -202,7 +202,7 @@ export default function AppointmentList() {
   } else if (user.role === "doctor") {
     return (
       <div>
-        <h3 className="text-center" style={{margin: '1%'}}>Appointments</h3>
+        <h3 className="text-center marginAllaround" >Appointments</h3>
         <Table striped bordered hover size="sm">
           <thead className="thead-light">
             <tr>
@@ -264,7 +264,7 @@ export default function AppointmentList() {
   } else {
     return (
       <div>
-        <h3 className='text-center' style={{margin: '1%'}} >Appointments</h3>
+        <h3 className='text-center marginAllaround' >Appointments</h3>
         <Button className='top-button' onClick={handleRole}>Create Appointment</Button>
         <Table striped bordered hover size="sm">
           <thead className="thead-light">

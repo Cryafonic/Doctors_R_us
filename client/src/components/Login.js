@@ -52,12 +52,12 @@ function Login() {
   } else {
     return (
       <div>
-        <Card className="card bg-light" style={{ width: "30%", height: "1%" }}>
+        <Card className="card bg-light loginCard" >
           <form onSubmit={onSubmit}>
             <h2 className="text-center">Login</h2>
             <h5 className="text-center">{message}</h5>
             <div className="input-center">
-              <InputGroup className="mb-2 ms-2" style={{ width: "80%" }}>
+              <InputGroup className="mb-2 ms-2 loginInputGroup" >
                 <FormControl
                   value={email}
                   onChange={hanldeChange}
@@ -67,7 +67,7 @@ function Login() {
                   placeholder="email"
                 />
               </InputGroup>
-              <InputGroup className="mb-2 ms-2" style={{ width: "80%" }}>
+              <InputGroup className="mb-2 ms-2 loginInputGroup" >
                 <FormControl
                   value={password}
                   onChange={hanldeChange}

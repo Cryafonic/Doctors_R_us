@@ -45,8 +45,8 @@ export default function Diagnosis(props) {
     return (
       <>
         <Alert variant="success mobile-alert">{message}</Alert>
-        <Card style={{ width: "460px" }} className="bg-light">
-          <form onSubmit={onSubmit} style={{margin: '1%' }} >
+        <Card className="bg-light setWidth460">
+          <form onSubmit={onSubmit} className='marginAllaround' >
             <label>Diagnosis: </label>
             <textarea
               type="text"
@@ -55,7 +55,7 @@ export default function Diagnosis(props) {
               value={diagnosis}
               onChange={onChange}
             />
-            <Button style={{margin: '1% 1% 1% 80%'}} type="submit">Submit</Button>
+            <Button className='diagnosisSubmitButton' type="submit">Submit</Button>
           </form>
         </Card>
       </>
@@ -63,8 +63,8 @@ export default function Diagnosis(props) {
   } else {
     return (
       <>
-        <Card style={{ width: "460px" }} className="bg-light">
-          <form onSubmit={onSubmit} style={{margin: '1%' }} >
+        <Card className="bg-light setWidth460">
+          <form onSubmit={onSubmit} className='marginAllaround' >
             <label>Diagnosis: </label>
             <textarea
               type="text"
@@ -73,7 +73,7 @@ export default function Diagnosis(props) {
               value={diagnosis}
               onChange={onChange}
             />
-            <Button style={{margin: '1% 1% 1% 80%'}} type="submit">Submit</Button>
+            <Button className='diagnosisSubmitButton' type="submit">Submit</Button>
           </form>
         </Card>
       </>

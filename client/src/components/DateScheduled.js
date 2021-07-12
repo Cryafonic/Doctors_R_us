@@ -52,20 +52,19 @@ export default function DateScheduled(props) {
     const dateFormated = today.toISOString();
     return (
       <>
-        <Alert variant="success mobile-alert" style={{width:'200px'}} >{message}</Alert>
+        <Alert variant="success mobile-alert widthAlert" >{message}</Alert>
         <form onSubmit={onSubmit}>
-          <Card style={{ width: "450px" }} className='input-center bg-light' >
-            <h4 style={{ margin:'0 70% 0 0' }} >Diagnosis: </h4>
+          <Card className='input-center bg-light widthAppointmentCard' >
+            <h4 className='right70margin' >Diagnosis: </h4>
             <input
-              style={{ width: '300px'}}
               type="date"
               name="yyyy-mm-dd"
-              className="form-control m-1"
+              className="form-control m-1 dateWidth"
               value={date}
               onChange={handleInput}
               min={dateFormated.substring(0, 10)}
             />
-            <select onChange={handleSelect} style={{ width: '300px'}} className="form-control">
+            <select onChange={handleSelect} className="form-control dateWidth">
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -77,7 +76,7 @@ export default function DateScheduled(props) {
               <option value="16:00">16:00</option>
               <option value="17:00">17:00</option>
             </select>
-            <Button style={{ width: '100px', margin: '1% 0 1% 70%' }} type="submit">Submit</Button>
+            <Button className='dateScheduledSubmitButton' type="submit">Submit</Button>
           </Card>
         </form>
       </>
@@ -89,18 +88,17 @@ export default function DateScheduled(props) {
     return (
       <>
         <form onSubmit={onSubmit}>
-          <Card style={{ width: "450px" }} className='input-center bg-light' >
-            <h4 style={{ margin:'0 70% 0 0' }} >Diagnosis: </h4>
+          <Card className='input-center bg-light widthAppointmentCard' >
+            <h4 className='right70margin' >Diagnosis: </h4>
             <input
-              style={{ width: '300px'}}
               type="date"
               name="yyyy-mm-dd"
-              className="form-control m-1"
+              className="form-control m-1 dateWidth"
               value={date}
               onChange={handleInput}
               min={dateFormated.substring(0, 10)}
             />
-            <select onChange={handleSelect} style={{ width: '300px'}} className="form-control">
+            <select onChange={handleSelect} className="form-control dateWidth">
               <option value="08:00">08:00</option>
               <option value="09:00">09:00</option>
               <option value="10:00">10:00</option>
@@ -112,7 +110,7 @@ export default function DateScheduled(props) {
               <option value="16:00">16:00</option>
               <option value="17:00">17:00</option>
             </select>
-            <Button style={{ width: '100px', margin: '1% 0 1% 70%' }} type="submit">Submit</Button>
+            <Button className='dateScheduledSubmitButton' type="submit">Submit</Button>
           </Card>
         </form>
       </>

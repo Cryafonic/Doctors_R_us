@@ -14,7 +14,7 @@ function NavBar({ logout }) {
   if (!user.accesstoken) {
     return (
       <Navbar bg="dark" variant="dark">
-        <Image src="hosLogo.png" style={{ height: "35px", margin: "0 0 0 10px" }} rounded />
+        <Image src="hosLogo.png" className='navImage' rounded />
         <Nav>
           <Link className="links m-2" to="/login">
             Login
@@ -28,7 +28,7 @@ function NavBar({ logout }) {
   } else {
     return (
       <Navbar bg="dark" variant="dark">
-        <Image src="hosLogo.png" style={{ height: "35px", margin: "0 0 0 10px" }} rounded />
+        <Image src="hosLogo.png" className='navImage' rounded />
         <Nav>
           <Link className="links m-2" to="/">
             Appointments

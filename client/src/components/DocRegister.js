@@ -61,12 +61,11 @@ function DocRegister() {
         <Alert variant="success mobile-alert">{message}</Alert>
         <form onSubmit={onSubmit}>
           <Card
-            className="input-center card bg-light"
-            style={{ width: "500px", height: "1%" }}
+            className="input-center card bg-light docCard"
           >
-            <h2 style={{ margin: "1% 46% 1% 1%" }}>Register a Doctor:</h2>
+            <h2 className='docH2' >Register a Doctor:</h2>
 
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={email}
                 onChange={hanldeChange}
@@ -76,7 +75,7 @@ function DocRegister() {
                 placeholder="Email"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={password}
                 onChange={hanldeChange}
@@ -86,7 +85,7 @@ function DocRegister() {
                 placeholder="Password"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={name}
                 onChange={hanldeChange}
@@ -96,7 +95,7 @@ function DocRegister() {
                 placeholder="Name"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={surname}
                 onChange={hanldeChange}
@@ -106,7 +105,7 @@ function DocRegister() {
                 placeholder="Surname"
               />
             </InputGroup>
-            <Button type="submit" style={{ margin: "1% 1% 1% 75%" }}>
+            <Button type="submit" className='docSubmitButton'>
               Register
             </Button>
           </Card>
@@ -118,12 +117,11 @@ function DocRegister() {
       <div>
         <form onSubmit={onSubmit}>
           <Card
-            className="input-center card bg-light"
-            style={{ width: "500px", height: "1%" }}
+            className="input-center card bg-light docCard"
           >
             <h2 style={{ margin: "1% 46% 1% 1%" }}>Register a Doctor:</h2>
             <h5>{message}</h5>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={email}
                 onChange={hanldeChange}
@@ -133,7 +131,7 @@ function DocRegister() {
                 placeholder="Email"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={password}
                 onChange={hanldeChange}
@@ -143,7 +141,7 @@ function DocRegister() {
                 placeholder="Password"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={name}
                 onChange={hanldeChange}
@@ -153,7 +151,7 @@ function DocRegister() {
                 placeholder="Name"
               />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
                 value={surname}
                 onChange={hanldeChange}
@@ -163,7 +161,7 @@ function DocRegister() {
                 placeholder="Surname"
               />
             </InputGroup>
-            <Button type="submit" style={{ margin: "1% 1% 1% 75%" }}>
+            <Button type="submit" className='docSubmitButton' >
               Register
             </Button>
           </Card>

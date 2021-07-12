@@ -57,10 +57,10 @@ function Register() {
     return (
       <div>
         <form onSubmit={onSubmit}>
-        <Card className="input-center card bg-light" style={{ width: "500px", height: "1%" }}>
-          <h2 style={{margin: '1% 74% 1% 1%'}} >Register:</h2>
+        <Card className="input-center card bg-light docCard" >
+          <h2 className='h2Reg' >Register:</h2>
 
-          <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+          <InputGroup className="mb-2 ms-2 docSet50" >
             <FormControl
               value={email}
               onChange={hanldeChange}
@@ -70,7 +70,7 @@ function Register() {
               placeholder="Email"
             />
         </InputGroup>
-        <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+        <InputGroup className="mb-2 ms-2 docSet50" >
             <FormControl
               value={password}
               onChange={hanldeChange}
@@ -80,7 +80,7 @@ function Register() {
               placeholder="Password"
             />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
             <FormControl
               value={name}
               onChange={hanldeChange}
@@ -90,7 +90,7 @@ function Register() {
               placeholder="Name"
             />
             </InputGroup>
-            <InputGroup className="mb-2 ms-2" style={{ width: "50%" }}>
+            <InputGroup className="mb-2 ms-2 docSet50" >
             <FormControl
               value={surname}
               onChange={hanldeChange}
@@ -100,7 +100,7 @@ function Register() {
               placeholder="Surname"
             />
           </InputGroup>
-          <Button type="submit" style={{ margin: '1% 1% 1% 75%'}} >Register</Button>
+          <Button type="submit" className='docSubmitButton' >Register</Button>
           </Card>
         </form>
         

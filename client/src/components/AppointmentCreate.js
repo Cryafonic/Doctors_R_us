@@ -68,7 +68,7 @@ export default function AppointmentCreate() {
     return (
       <div>
         <Alert variant="success mobile-alert">{message}</Alert>
-        <Card style={{ width: "450px" }} className="bg-light">
+        <Card className="bg-light widthAppointmentCard">
           <h3>Create appointment</h3>
           <form onSubmit={onSubmit} className='m-2'>
             <div className="form-group">
@@ -113,8 +113,7 @@ export default function AppointmentCreate() {
               <input
                 type="submit"
                 value="Add appointment"
-                className="btn btn-primary"
-                style={{margin: '0 0 0 65%'}}
+                className="btn btn-primary marginAppointmentButton"
               />
             </div>
           </form>
@@ -125,7 +124,7 @@ export default function AppointmentCreate() {
     return (
       <div>
         <h4>{message}</h4>
-        <Card style={{ width: "450px" }} className="bg-light">
+        <Card className="bg-light widthAppointmentCard">
           <h3>Create appointment</h3>
           <form onSubmit={onSubmit} className='m-2'>
             <div className="form-group">
@@ -170,8 +169,7 @@ export default function AppointmentCreate() {
               <input
                 type="submit"
                 value="Add appointment"
-                className="btn btn-primary"
-                style={{margin: '0 0 0 65%'}}
+                className="btn btn-primary marginAppointmentButton"
               />
             </div>
           </form>

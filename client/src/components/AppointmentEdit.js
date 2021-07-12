@@ -71,9 +71,9 @@ export default function AppointmentEdit(props) {
   } else {
     return (
       <div>
-        <Card style={{ width: "450px" }} className="bg-light">
+        <Card className="bg-light widthAppointmentCard">
           <h3>Edit appointment</h3>
-          <form style={{ margin:'0' }} className='m-2' onSubmit={onSubmit}>
+          <form className='m-2' onSubmit={onSubmit}>
             <div>
               <label>Doctor: </label>
               <select  className="form-control" onChange={handleDoctor}>
@@ -126,10 +126,9 @@ export default function AppointmentEdit(props) {
             <br />
             <div>
               <input
-                style={{margin: '1% 1% 3% 60%'}}
                 type="submit"
                 value="Update appointment"
-                className="btn btn-primary"
+                className="btn btn-primary updateAppointmentButton"
               />
             </div>
           </form>
