@@ -44,12 +44,6 @@ app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-app.get("/", (req, res) => {
-    res
-        .set("Content-Security-Policy", "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'")
-        .send("<html><head></head><body></body></html>");
-});
-
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
 });
