@@ -1,0 +1,58 @@
+.float-right {
+  margin-left: 50%;
+}
+
+.card {
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.input-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-button {
+  margin-left: 10.5%;
+}
+
+a {
+  color: darkgray;
+  text-decoration: none;
+}
+
+a:hover {
+  color: gray;
+  /* text-decoration: none */
+}
+
+.top-button {
+  margin: 10px;
+  float: right;
+}
+
+.logout-button {
+  position: absolute;
+  right: 10px;
+}
+
+.appointment-heading {
+  margin: 1%;
+}
+
+button {
+  margin: 0.5%;
+}
+
+.mobile-alert {
+  margin: 1% 1% 1% 85%;
+}
+
+@media only screen and (max-width: 1050px) {
+  .mobile-alert {
+    margin: 1% 1% 1% 58%;
+  }
+}
