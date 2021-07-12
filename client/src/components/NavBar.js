@@ -34,7 +34,7 @@ function NavBar({ logout }) {
             Appointments
           </Link>
         </Nav>
-        <Button className="logout-button" variant="danger" onClick={() => logout()}>
+        <Button className="logout-button" variant="danger" onClick={() => {logout()}}>
           Logout
         </Button>
       </Navbar>
