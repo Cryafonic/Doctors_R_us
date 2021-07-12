@@ -134,7 +134,7 @@ export default function AppointmentList() {
     return (
       <div>
         <h3 className='text-center marginAllaround' >Appointments</h3>
-        <Button className="top-button " onClick={handleRole}>Create Doctor</Button>
+        <Button className="top-button " onClick={() => handleRole()}>Create Doctor</Button>
         <Table striped bordered hover size="sm">
           <thead className="thead-light">
             <tr>
@@ -265,7 +265,7 @@ export default function AppointmentList() {
     return (
       <div>
         <h3 className='text-center marginAllaround' >Appointments</h3>
-        <Button className='top-button' onClick={handleRole}>Create Appointment</Button>
+        <Button className='top-button' onClick={() => handleRole()}>Create Appointment</Button>
         <Table striped bordered hover size="sm">
           <thead className="thead-light">
             <tr>
