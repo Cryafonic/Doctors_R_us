@@ -119,7 +119,7 @@ function DocRegister() {
           <Card
             className="input-center card bg-light docCard"
           >
-            <h2 style={{ margin: "1% 46% 1% 1%" }}>Register a Doctor:</h2>
+            <h2 className='docH2' >Register a Doctor:</h2>
             <h5>{message}</h5>
             <InputGroup className="mb-2 ms-2 docSet50" >
               <FormControl
