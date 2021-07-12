@@ -51,6 +51,82 @@ button {
   margin: 1% 1% 1% 85%;
 }
 
+.widthAppointmentCard {
+  width: 450px;
+}
+
+.updateAppointmentButton {
+  margin: 1% 1% 3% 60%;
+}
+
+.marginAppointmentButton {
+  margin: 0 0 0 65%
+}  
+
+.marginAllaround {
+  margin: 1%;
+}
+
+.widthAlert {
+  width: 200px;
+}
+
+.right70margin {
+  margin: 0 70% 0 0;
+}
+
+.dateWidth {
+  width: 300px;
+}
+
+.dateScheduledSubmitButton {
+  width: 100px;
+  margin: 1% 0 1% 70%;
+}
+
+.setWidth460 {
+  width: 460px;
+}
+
+.diagnosisSubmitButton {
+  margin: 1% 1% 1% 80%;
+}
+
+.docCard {
+  width: 500px; 
+  height: 1%;
+}
+
+.docH2 {
+  margin: 1% 46% 1% 1%;
+}
+
+.docSet50 {
+  width: 50%;
+}
+
+.docSubmitButton {
+  margin: 1% 1% 1% 75%;
+}
+
+.loginCard {
+  width: 30%;
+   height: 1%;
+}
+
+.loginInputGroup {
+  width: 80%;
+}
+
+.navImage {
+  height: 35px; 
+  margin: 0 0 0 10px;
+}
+
+.h2Reg {
+  margin: 1% 74% 1% 1%;
+}
+
 @media only screen and (max-width: 1050px) {
   .mobile-alert {
     margin: 1% 1% 1% 58%;
