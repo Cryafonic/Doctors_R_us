@@ -20,6 +20,14 @@ app.use('/api', doctorsRoute)
 app.use('/api', authRoute)
 app.use('/api', appointmentRoute)
 
+// If production NODE_ENV becomes production then build the production build in this location then fetch everything from that build and send it as a response here.
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static(path.join(__dirname, 'timeless-app-frontend/build')));
+    app.get('*',(req,res) =>
+      {res.sendFile(path.resolve(__dirname, 'timeless-app-frontend', 'build', 'index.html'));
+  });
+}
+
 // conect to the database
 let db = 'mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority';
 // 'mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority'
@@ -46,9 +54,11 @@ app.get("/", (req, res) => {
         .send("<html><head></head><body></body></html>");
 })
 
+// set directory to the static folder.
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/api/*', (req, res) => {
+// serve the files form the directory
+app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
