@@ -1,8 +1,8 @@
 ![Doctor R us login](./DoctorRUsPictures/login.PNG)
 
-# Project Name: Timeless
+# Project Name: Doctor R us
 
-Project Doctor R us is a Appointment system that involves the prevention of speding covid and assisting those in need o an medical appointment. It will feature seamless UI/UX content and contain all the logic needed for admin/user privileges as well as a Appointment system functionallity.
+Project Doctor R us is a Appointment system that involves the prevention of spending covid and assisting those in need o an medical appointment. It will feature seamless UI/UX content and contain all the logic needed for admin/user privileges as well as a Appointment system functionality.
 
 ![Appointment gif](./DoctorRUsPictures/loginGif.gif)
 
@@ -10,7 +10,7 @@ Project Doctor R us is a Appointment system that involves the prevention of sped
 **Deployed to Heroku here
 ~~https://https://doctors-r-us.herokuapp.com/~~
 NB. DO NOT CLICK SITE. DOWN FOR MAINTENANCE. TRYING TO FIX HEROKU DEPLOYMENT ISSUES.
-PLEASE OPEN UP A LOCAL VERSION ON YOUR PC TO SEE APPLICATION.
+PLEASE OPEN UP A LOCAL VERSION ON YOUR PC TO SEE THE APPLICATION.
 
 # Installation
 
