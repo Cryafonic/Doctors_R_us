@@ -1,10 +1,10 @@
-![Doctor R us login](https://drive.google.com/file/d/10Xum6aegLRAYwi4WyT7zOjZpeE1Mk9uo/view?usp=sharing)
+![Doctor R us login](./DoctorRUsPictures/login.PNG)
 
 # Project Name: Timeless
 
 Project Doctor R us is a Appointment system that involves the prevention of speding covid and assisting those in need o an medical appointment. It will feature seamless UI/UX content and contain all the logic needed for admin/user privileges as well as a Appointment system functionallity.
 
-![Appointment gif](https://drive.google.com/file/d/1UiaHFSw67-BiIataKSyG2XdCFyOFqvZN/view?usp=sharing)
+![Appointment gif](./DoctorRUsPictures/loginGif.gif)
 
 # Site
 **Deployed to Heroku here
@@ -41,7 +41,7 @@ PLEASE OPEN UP A LOCAL VERSION ON YOUR PC TO SEE APPLICATION.
 
 ### If you are an end-user
 * Simply click this [link](https://https://doctors-r-us.herokuapp.com/) to open the website.
-![Website](https://drive.google.com/file/d/10Xum6aegLRAYwi4WyT7zOjZpeE1Mk9uo/view?usp=sharing)
+![Website](./DoctorRUsPictures/login.PNG)
 ### If you want to play with the admin functions use these login details:
 ```
 email: administrator@gmail.com
