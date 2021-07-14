@@ -20,14 +20,6 @@ app.use('/api', doctorsRoute)
 app.use('/api', authRoute)
 app.use('/api', appointmentRoute)
 
-// If production NODE_ENV becomes production then build the production build in this location then fetch everything from that build and send it as a response here.
-if (process.env.NODE_ENV === 'production') {
-    app.use(express.static(path.join(__dirname, 'timeless-app-frontend/build')));
-    app.get('*',(req,res) =>
-      {res.sendFile(path.resolve(__dirname, 'timeless-app-frontend', 'build', 'index.html'));
-  });
-}
-
 // conect to the database
 let db = 'mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority';
 // 'mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority'
@@ -48,19 +40,16 @@ mongoose.connection.once('open', () => {
     console.log('connected to database');
 });
 
-app.get("/", (req, res) => {
-    res
-        .set("Content-Security-Policy", "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'")
-        .send("<html><head></head><body></body></html>");
+app.get("*", (req, res) => {
+    express.static(path.join(__dirname, "\\client\\build"));
+    res.set("Content-Security-Policy", "default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'")
+        .sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
 })
 
-// set directory to the static folder.
-app.use(express.static(path.join(__dirname, 'build')));
+// If production NODE_ENV becomes production then build the production build in this location then fetch everything from that build and send it as a response here.
+// if (process.env.NODE_ENV === 'production') {
 
-// serve the files form the directory
-app.get('/*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// }
 
 app.listen(PORT, () => {
     console.log(`http://localhost:${PORT}`);
