@@ -61,6 +61,7 @@ export default function AppointmentCreate() {
     setDoctor(e.target.value);
   }
 
+  // check for a route to render
   console.log(doctor);
   if (!user.accesstoken) {
     return <Redirect to="/login" />;

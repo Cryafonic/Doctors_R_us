@@ -66,7 +66,7 @@ module.exports.addDiagnosis = (req, res) => {
   }
 };
 
-
+//  adding a date scheduled to tha appointment
 module.exports.addDateScheduled = (req, res) => {
   const userId = isAuth(req);
   if ( userId !== null ) {

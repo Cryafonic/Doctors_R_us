@@ -43,6 +43,8 @@ export default function DateScheduled(props) {
       .then((res) => setMessage(res.data.message));
   }
   console.log(date, hour);
+  // checks for a route to render
+  // shows the alert if needed
   if (!user.accesstoken) {
     return <Redirect to="/login" />;
   }

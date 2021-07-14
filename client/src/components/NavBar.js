@@ -11,6 +11,7 @@ import Image from "react-bootstrap/Image";
 function NavBar({ logout }) {
   const [user] = useContext(UserContext);
 
+    // checks for what nav to render
   if (!user.accesstoken) {
     return (
       <Navbar bg="dark" variant="dark">

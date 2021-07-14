@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// database structor for the appointment
 const AppointmentSchema = mongoose.Schema({
     userId: {
         type: String,

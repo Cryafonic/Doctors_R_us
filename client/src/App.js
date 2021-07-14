@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 //components 
 import AppointmentList from './components/AppointmentList';
@@ -24,6 +24,8 @@ function App() {
     window.location = '/';
   }
   console.log(user);
+
+  // renders the router with all routes it can to.
   return ( 
     <UserContext.Provider value={[user, setUser]} >
       <div>

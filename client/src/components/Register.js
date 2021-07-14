@@ -50,7 +50,7 @@ function Register() {
       setSurename(value);
     }
   };
-
+    // checks for what page to render
   if (message === "registerd") {
     return <Redirect to="/login" />;
   } else {

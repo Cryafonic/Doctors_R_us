@@ -38,6 +38,7 @@ export default function Diagnosis(props) {
       .then((res) => setMessage(res.data.message));
   }
 
+  // checks for what page to render
   if (!user.accesstoken) {
     return <Redirect to="/login" />;
   }

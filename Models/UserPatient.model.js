@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const { isEmail } = require('validator');
 
+// database structor for the Patient
 const UserPatientSchema = mongoose.Schema({
     name: {
         type: String,

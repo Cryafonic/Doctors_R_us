@@ -21,7 +21,9 @@ app.use('/api', authRoute)
 app.use('/api', appointmentRoute)
 
 // conect to the database
-mongoose.connect('mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority',{
+let db = 'mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority';
+// 'mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority'
+mongoose.connect('mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority',{
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -46,7 +48,7 @@ app.get("/", (req, res) => {
 
 app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/*', (req, res) => {
+app.get('/api/*', (req, res) => {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 

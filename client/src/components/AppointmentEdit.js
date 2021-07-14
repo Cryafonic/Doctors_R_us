@@ -63,7 +63,7 @@ export default function AppointmentEdit(props) {
   function handleDoctor(e) {
     setDoctor(e.target.value);
   }
-
+  // checks for that route to render
   if (!user.accesstoken) {
     return <Redirect to="/login" />;
   } else if (edit === true) {
