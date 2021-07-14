@@ -20,12 +20,8 @@ app.use("/api", doctorsRoute);
 app.use("/api", authRoute);
 app.use("/api", appointmentRoute);
 
-// conect to the database
-let db =
-  "mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority";
 // 'mongodb+srv://Brendon:Adm1n1234@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority'
-mongoose.connect(
-  "mongodb+srv://Brendon:Password1@cluster0.piqrh.mongodb.net/Doctors_R_us?retryWrites=true&w=majority",
+mongoose.connect(process.env.URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
